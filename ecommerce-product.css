@@ -1,0 +1,314 @@
+*{
+	padding: 0px;
+	margin: 0px;
+	font-family: "Kumbh Sans", sans-serif;
+}
+.sitewrapper {
+	padding-inline: 100px;
+}
+.sitewrapper header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: 1px solid hsl(219, 9%, 75%);
+	padding-block: 35px;
+}
+.sitewrapper header nav {
+	display: flex;
+	gap: 60px;
+	align-items: center;
+}
+.sitewrapper header nav .menu {
+	display: none;
+}
+.sitewrapper header nav .menu .menucontent {
+	display: none;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	background-color: hsl(0, 0%, 100%);
+	padding-block-start: 20px;
+	padding-inline: 20px;
+	min-width: 200px;
+	height: 700px;
+	box-shadow: 1px 2px 10px;
+	z-index: 1;
+}
+.sitewrapper header nav .menu .menucontent a img {
+	margin-block: 10px 20px;
+}
+.sitewrapper header nav .menu .menucontent .child a {
+	display: block;
+	text-decoration: none;
+	color: hsl(220, 13%, 13%);
+	margin-block: 20px;
+	font-size: 20px;
+}
+.sitewrapper header nav .menu:active .menucontent {
+	display: block;
+}
+.sitewrapper header nav .menu .menucontent a img:active .menucontent {
+	display: none;
+}
+.sitewrapper header nav div .a {
+	text-decoration: none;
+	color: hsl(219, 9%, 45%);
+	margin-inline-end: 20px;
+}
+.sitewrapper header nav div .a:hover {
+	color: hsl(0, 0%, 0%);
+	padding-block-end: 47px;
+	border-bottom: 5px solid hsl(26, 100%, 55%);
+}
+.sitewrapper header section {
+	display: flex;
+	gap: 40px;
+	align-items: center;
+}
+.sitewrapper header section div a .avatar {
+	width: 50px;
+}
+.sitewrapper header section div a .avatar:hover {
+	border: 2px solid hsl(26, 100%, 55%);
+	border-radius: 100px;
+}
+.sitewrapper header section .dropdown {
+	display: inline-block;
+	position: relative;
+}
+.sitewrapper header section .content h2 {
+	border-bottom: 1px solid hsl(219, 9%, 75%);
+	padding: 20px;
+}
+.sitewrapper header section .content p {
+	text-align: center;
+}
+.sitewrapper header section .dropdown .content {
+	display: none;
+	position: absolute;
+	top: 35px;
+	right: 0px;
+	height: 200px;
+	min-width: 300px;
+	box-shadow: 5px 5px 10px hsl(0, 0%, 50%);
+	border-radius: 10px;
+	background-color: hsl(0, 0%, 100%);
+	font-size: 15px;
+	z-index: 1;
+}
+.sitewrapper header section .dropdown:hover .content {
+	display: block;
+}
+.sitewrapper main {
+	display: flex;
+	gap: 100px;
+	padding-block: 80px;
+	padding-inline: 50px;
+	justify-content: center;
+}
+.sitewrapper main article .product {
+	width: 500px;
+	height: 600px;
+	background-image: url('../images/image-product-1.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	border-radius: 10px;
+}
+.sitewrapper main article .product div a img {
+	display: none;
+}
+.sitewrapper main article div  {
+	display: flex;
+	align-items: center;
+	gap: 52px;
+	margin-block: 40px;
+}
+.sitewrapper main article div a img {
+	width: 85px;
+	border-radius: 10px;
+}
+.sitewrapper main article div a img:hover {
+	border: 2px solid hsl(26, 100%, 55%);
+	background-color: hsl(0, 0%, 100%);
+}
+.sitewrapper main .article {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 750px;
+}
+.sitewrapper main .article h3 {
+	color: hsl(219, 9%, 45%);
+	margin-block: 20px;
+	text-transform: uppercase;
+
+}
+.sitewrapper main .article h1 {
+	font-size: 40px;
+	color: hsl(220, 13%, 13%);
+	margin-block: 15px 30px;
+}
+.sitewrapper main .article p {
+	color: hsl(219, 9%, 45%);
+	margin-block: 20px;
+}
+.sitewrapper main .article .pricetag {
+	display: block;
+}
+.sitewrapper main .article div {
+	display: inline-flex;
+	align-items: center;
+	gap: 20px;
+	font-size: 20px;
+	color: hsl(220, 13%, 13%);
+}
+.sitewrapper main .article div h6 {
+	color: hsl(0, 0%, 100%);
+	background-color: hsl(220, 13%, 13%);
+	border-radius: 5px;
+	padding: 3px 7px;
+	text-align: center;
+}
+.sitewrapper main .article .line {
+	text-decoration: line-through;
+	color: hsl(219, 9%, 45%);
+	margin-block: 20px;
+}
+.sitewrapper main .article .cover {
+	display: flex;
+	gap: 30px;
+	padding-block-start: 100px;
+}
+.sitewrapper main .article .cover div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: hsl(223, 64%, 98%);
+	border-radius: 10px;
+	width: 130px;
+	padding-inline: 10px;
+	padding-block: 15px;
+}
+.sitewrapper main .article .cover div input {
+	border: none;
+	text-align: center;
+	width: 50px;
+	color:  hsl(219, 9%, 45%);
+	background-color: hsl(223, 64%, 98%);
+}
+.sitewrapper main .article .cover .cart {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	text-decoration: none;
+	color: hsl(220, 13%, 13%);
+	background-color: hsl(26, 100%, 55%);
+	border-radius: 10px;
+	width: 250px;
+	padding-block: 15px;
+}
+.sitewrapper main .article .cover .cart:hover {
+	background-color: hsl(26, 100%, 80%);
+}
+@media only screen and (max-width: 700px) and (min-width: 0px) {
+	.sitewrapper {
+	padding-inline: 0px;
+	}
+	.sitewrapper header {
+		justify-content: space-around;
+		border-bottom: none;
+		padding-block: 20px;
+	}
+	.sitewrapper header nav {
+		display: flex;
+		gap: 15px;
+	}
+	.sitewrapper header nav .menu {
+		display: flex;
+	}
+	.sitewrapper header nav div .a {
+		display: none;
+	}
+	.sitewrapper header section {
+		gap: 10px;
+	}
+	.sitewrapper header section .dropdown:active .content {
+		display: block;
+	}
+	.sitewrapper main {
+		flex-direction: column;
+		padding-block: 0px;
+		padding-inline: 0px;
+		gap: 0px;
+	}
+	.sitewrapper main article .product {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		width: 100%;
+		border-radius: 0px;
+		margin-block: 0px;
+	}
+	.sitewrapper main article div a img {
+		display: none;
+	}
+	.sitewrapper main article .product div {
+		display: flex;
+		justify-content: center;
+		width: 40px;
+		height: 40px;
+		border-radius: 100px;
+		background-color: hsl(0, 0%, 100%);
+		border: 1 solid hsl(26, 100%, 55%);
+		margin-inline: 15px;
+	}
+	.sitewrapper main article .product div a img {
+		display: flex;
+		width: 100%;
+	}
+	.sitewrapper main .article {
+		justify-content: flex-start;
+		width: 100%;
+		height: 470px;
+		padding-inline: px;
+	}
+	.sitewrapper main .article h3 {
+		font-size: 15px;
+		margin-block: 10px;
+		padding-inline: 15px;
+	} 
+	.sitewrapper main .article h1 {
+		font-size: 30px;
+		margin-block: 5px 10px;
+		padding-inline: 15px;
+	}
+	.sitewrapper main .article p {
+		font-size: 15px;
+		padding-inline: 15px;
+	}
+	.sitewrapper main .article .pricetag {
+		display: inline-flex;
+		padding-inline: 15px;
+
+	}
+	.sitewrapper main .article .cover {
+		display: block;
+		padding-inline: 15px;
+		padding-block-start: 10px;
+	}
+	.sitewrapper main .article .cover div {
+		gap: 120px;
+		width: 100%;
+		padding-inline: 0px;
+	}
+	.sitewrapper main .article .cover div input {
+		width: px;
+	}
+	.sitewrapper main .article .cover .cart {
+		width: 100%;
+		margin-block: 20px;
+	}
+}
+@media only screen and (max-width: 1100px) and (min-width: 700px) 
